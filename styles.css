@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+* {
+	list-style: none;
+	font-family: 'Karla', sans-serif;
+}
+
+body {
+	background: hsl(204, 43%, 93%);
+	height: 100vh;
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+h1 {
+	color: hsl(179, 62%, 43%);
+	font-size: 32px;
+	margin-top: 40px;
+}
+
+h2 {
+	color: hsl(71, 73%, 54%);
+	font-size: 24px;
+}
+
+h3 {
+	font-size: 20px;
+	margin-top: 40px;
+}
+
+main {
+	width: 800px;
+	height: auto;
+	border-radius: 10px;
+	box-shadow: 10px 10px 25px rgba(0, 0, 0, .1), -10px 10px 25px rgba(0, 0, 0, .1);
+	display: flex;
+	flex-wrap: wrap;
+	overflow: hidden;
+	background: white;
+}
+
+/*Join our community section*/
+
+.join {
+	flex-basis: 100%;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.join-content {
+	width: 85%;
+	margin-left: 52px;
+	
+}
+
+
+.join-content p {
+	color: hsl(218, 22%, 67%);
+	margin-bottom: 40px;
+	line-height: 2;
+}
+
+/*Monthly section*/
+
+.monthly {
+	flex-basis: 50%;
+	background-color: hsl(179, 62%, 43%);
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+
+	
+}
+
+.monthly-content {
+	margin-left: 52px;
+}
+
+
+.monthly-content span {
+	font-weight: bold;
+	font-size: 32px;
+	vertical-align: middle;
+	color: white;
+}
+
+.monthly-content p:nth-child(2) { /*Changes color of "per month"*/
+	color: hsla(204, 43%, 93%, .5);
+}
+
+#sign-up-btn {
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, .2);
+	width: 100%;
+	height: 56px;
+	background: hsl(71, 73%, 54%);
+	color: white;
+	font-size: 20px;
+	margin-bottom: 40px;
+	font-weight: bold;
+}
+
+.monthly, .why-us {
+	color: white;
+}
+
+/*Why Us section*/
+
+.why-us {
+	flex-basis: 50%;
+	background-color: #4ABEBD;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+
+}
+
+.why-us-content {
+	margin-left: 52px;
+}
+
+.why-us-content h3 {
+	margin-top: 40px;
+}
+
+ul {
+	padding-left: 0;
+	margin-bottom: 40px;
+}
+
+.why-us-content ul li {
+	padding-left: 0;
+	color: hsla(204, 43%, 93%, .8); 
+	font-size: 16px;
+	line-height: 1.5em;
+}
+
+@media only screen and (max-width: 850px) {
+	main {
+		width: 65%;
+	}
+
+	h1 {
+		margin-top: 20px;
+	}
+
+	h3 {
+		margin-top: 20px;
+	}
+	
+	.monthly, .why-us, .join {
+		flex-basis: 100%;
+		justify-content: center;
+	}
+
+	.join-content, .monthly-content, .why-us-content {
+		width: 90%;
+		margin-left: 0;
+	}
+}
+
+/*Mobile Font styles*/
+@media only screen and (max-width: 625px) {
+	main {
+		width: 325px;
+	}
+	h1 {
+		margin-top: 20px;
+		margin-bottom: 30px;
+		font-size: 20px;
+	}
+	h2 {
+		font-size: 16px;
+	}
+
+	h3 {
+		margin-top: 20px;
+		font-size: 18px;
+	}
+
+	.join-content p {
+		font-size: 14px;
+		line-height: 2;
+		margin-bottom: 30px;
+	}
+
+	.monthly p {
+		font-size: 16px;
+	}
+
+	#sign-up-btn {
+		font-size: 16px;
+		height: 48px;
+		margin-bottom: 20px;
+	}
+
+	ul {
+		margin-bottom: 20px;
+	}
+
+	li {
+		font-size: 14px;
+	}
+}
